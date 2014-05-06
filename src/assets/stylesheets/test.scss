@@ -302,24 +302,6 @@ megaman animation
 start of wonky bullshit
 ======================*/
 
-.text-container {
-	position: relative;
-	font-size: 100px;
-}
-
-.rotating-text {
-	position: absolute;
-	left: 200px;
-	-webkit-transform-origin: top center;
-	 		transform-origin: top center;
-	-webkit-animation-name: rotatehowdy;
-			animation-name: rotatehowdy;
-	-webkit-animation-duration: 5s;
-			animation-duration: 5s;
-	-webkit-animation-iteration-count: infinite;
-			animation-iteration-count: infinite;
-}
-
 .bouncingball {
 	background: #c146a1;
 	border-radius: 50%;
@@ -354,13 +336,15 @@ start of wonky bullshit
 		text-align: center;
 		position: relative;
 
-		&:hover p {
+		&:hover {
+			p {
 			background: rgba(101, 105, 111, 0.73);
-		}
+			}
 
-		&:hover i {
+			 i {
 	 		right: 25px;
 	 		opacity: 1;
+			}
 		}
 
 		 i {
@@ -370,7 +354,6 @@ start of wonky bullshit
 			transition: all .4s ease;
 		}
 	}
-
 }
 
 .loading { 
@@ -456,58 +439,57 @@ start of wonky bullshit
 	-webkit-animation-name: scaling;
 	-webkit-animation-duration: 1s;
 	-webkit-animation-iteration-count: infinite;
-
 }
 
 .george {
-	background: url(./img/george.png);
+	background: url(/assets/img/george.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 325px;
 	height: 358px;
 	position: relative;
+
+	.eye {
+		background: #000;
+		border: 5px solid #fff;
+		border-radius: 50%;
+		height: 20px;
+		width: 20px;
+		position: absolute;
+		-webkit-animation-name: googlyeyes;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-iteration-count: infinite;
+	}
+
+	.left {
+		left: 100px;
+		top: 65px;
+	}
+	.right {
+		left: 140px;
+		top: 65px;
+	}
+	.george-mouth {
+		background: red;
+		border: 1px solid #000;
+		border-radius: 1px 1px 50px 50px ;
+		top: 120px;
+		width: 40px;
+		height: 30px;
+		left: 120px;
+		position: absolute;
+		-webkit-animation-name: georgelol;
+		-webkit-animation-duration: 1s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-transform-origin: top center;
+	}
 }
 
-.eye {
-	background: #000;
-	border: 5px solid #fff;
-	border-radius: 50%;
-	height: 20px;
-	width: 20px;
-	position: absolute;
-	-webkit-animation-name: googlyeyes;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-iteration-count: infinite;
-}
-
-.left {
-	left: 100px;
-	top: 65px;
-}
-.right {
-	left: 140px;
-	top: 65px;
-}
-
-.george-mouth {
-	background: red;
-	border: 1px solid #000;
-	border-radius: 1px 1px 50px 50px ;
-	top: 120px;
-	width: 40px;
-	height: 30px;
-	left: 120px;
-	position: absolute;
-	-webkit-animation-name: georgelol;
-	-webkit-animation-duration: 1s;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-transform-origin: top center;
-}
 
 
 
 .waldocrowd {
-	background: url(./img/waldocrowd.jpg);
+	background: url(/assets/img/waldocrowd.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	cursor: pointer;
@@ -547,7 +529,7 @@ textarea:focus {
 
 /*svg george*/
 .georgesvg {
-	background: url(./img/george.png);
+	background: url(/assets/img/george.png);
 	background-size: 100% 100%;
 	width: 432px;
 }
@@ -603,7 +585,7 @@ textarea:focus {
 .megaman {
     width: 40px;
     height: 40px;
-    background-image: url(./img/megaman.png);
+    background-image: url(/assets/img/megaman.png);
     
     -webkit-animation: play .8s steps(10) infinite;
             animation: play .8s steps(10) infinite;
@@ -658,7 +640,7 @@ textarea:focus {
 }
 
 .card-deck {
-	background: url(./img/back-card.png);
+	background: url(/assets/img/back-card.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 240px;
@@ -804,7 +786,7 @@ textarea:focus {
 }
 
 .zach {
-	background: url(./img/zach.jpg);
+	background: url(/assets/img/zach.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 330px;
@@ -816,7 +798,7 @@ textarea:focus {
 }
 
 .surferdude {
-	background: url(./img/surfer-dude.jpg);
+	background: url(/assets/img/surfer-dude.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 330px;
@@ -828,7 +810,7 @@ textarea:focus {
 }
 
 .beerflight {
-	background: url(./img/flight.jpg);
+	background: url(/assets/img/flight.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	height: 330px;
