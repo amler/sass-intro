@@ -170,6 +170,138 @@ body {
 	}
 }
 
+/*========================
+scaling animation
+==========================*/
+@-webkit-keyframes slidingbox {
+	0%, 100% {
+	right: 100%;
+	}
+	50% {
+	right: 0;
+	}
+}
+
+
+@-webkit-keyframes scaling {
+	0%, 100% {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+
+	30% {
+	-webkit-transform: scaleX (1.5) scaleY(0.75);
+			transform: scaleX(1.5) scaleY(0.75);
+	}
+
+	40% {
+	-webkit-transform: scaleX(0.75) scaleY(1.25);
+			transform: scaleX(0.75) scaleY(1.25);
+	}
+
+	60% {
+	-webkit-transform: scaleX(1.15) scaleY(0.85);
+			transform: scaleX(1.15) scaleY(0.85);
+	}
+}
+
+/*============================
+	loading animation
+==============================*/
+
+@-webkit-keyframes loadingprogress {
+	0%, 10% { 
+		width: 0; 
+	}
+
+	25%, 30% {
+		width: 25%;
+	}
+	60%, 80% {
+		width: 50%
+	}
+
+	100% { 
+		width: 100%; 
+	}
+}
+
+/*========================
+george's bulging eyes & laughing mouth
+==========================*/
+@-webkit-keyframes googlyeyes {
+
+	0%, 100% {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+
+	50% {
+	-webkit-transform: scale(1.2);
+			transform: scale(1.2);
+	}
+}
+
+@-webkit-keyframes georgelol {
+
+	0%, 100% {
+	-webkit-transform: scale(1);
+			transform: scale(1);
+	}
+
+	20% {
+	-webkit-transform: scaleY(0.30);
+			transform: scaleY(0.30);
+	}
+
+	30% {
+	-webkit-transform: scaleY(0.75);
+			transform: scaleY(0.75);
+	}
+
+	60% {
+	-webkit-transform: scaleY(0.5);
+			transform: scaleY(0.5);
+	}
+
+	80% {
+	-webkit-transform: scaleY(0.30);
+			transform: scaleY(0.30);
+	}
+}
+/*=====================
+animation on svg
+======================*/
+
+@-webkit-keyframes dash {
+	to {
+	stroke-dashoffset: 1000;
+	}
+}
+/*===============
+megaman animation
+=================*/
+@-webkit-keyframes play {
+	from {
+		background-position: 0px; 
+	}
+	to {
+		background-position: -400px;
+	}
+}
+
+@keyframes play {
+	from {
+		background-position: 0px; 
+	}
+	to {
+		background-position: -400px;
+	}
+}
+/*===================
+start of wonky bullshit
+======================*/
+
 .text-container {
 	position: relative;
 	font-size: 100px;
@@ -187,8 +319,6 @@ body {
 	-webkit-animation-iteration-count: infinite;
 			animation-iteration-count: infinite;
 }
-
-
 
 .bouncingball {
 	background: #c146a1;
@@ -243,31 +373,6 @@ body {
 
 }
 
-
-
-
-
-
-@-webkit-keyframes loadingprogress {
-	0%, 10% { 
-		width: 0; 
-	}
-
-	25%, 30% {
-		width: 25%;
-	}
-	60%, 80% {
-		width: 50%
-	}
-
-	100% { 
-		width: 100%; 
-	}
-}
-
-
-
-
 .loading { 
 	background: #666;
 	border-radius: 30px;
@@ -295,22 +400,23 @@ body {
 
 .relativebox {
 	position: relative;
+	border: 1px solid red;
 	height: 300px;
-	overflow: hidden;
+	
 
 	.yellow-circle {
-		width: 200px;
-		height: 200px;
-		background: rgba(255, 235, 0, 0.7);
-		border-radius: 50%;
 		position: absolute;
 		top: 0;
 		left: 25px;
+		width: 100px;
+		height: 100px;
+		background: rgba(255, 235, 0, 0.7);
+		border-radius: 50%;
 	}
 
 	.green-circle {
-		width: 200px;
-		height: 200px;
+		width: 100px;
+		height: 100px;
 		background: rgba(0, 255, 0, 0.7);
 		border-radius: 50%;
 		position: absolute;
@@ -319,8 +425,8 @@ body {
 	}
 
 	.red-circle {
-		width: 200px;
-		height: 200px;
+		width: 100px;
+		height: 100px;
 		background: rgba(255, 0, 0, 0.7);
 		border-radius: 50%;
 		position: absolute;
@@ -329,8 +435,8 @@ body {
 	}
 
 	.blue-box {
-		width:200px;
-		height:200px;
+		width:100px;
+		height:100px;
 		background:rgba(0,0,255,0.5);
 		position:absolute;
 		top: 0;
@@ -338,40 +444,6 @@ body {
 		-webkit-animation: slidingbox 5s infinite;
 	}
 }
-
-
-@-webkit-keyframes slidingbox {
-	0%, 100% {
-	right: 100%;
-	}
-	50% {
-	right: 0;
-	}
-}
-
-/* scaling  */
-@-webkit-keyframes scaling {
-	0%, 100% {
-	-webkit-transform: scale(1);
-			transform: scale(1);
-	}
-
-	30% {
-	-webkit-transform: scaleX (1.5) scaleY(0.75);
-			transform: scaleX(1.5) scaleY(0.75);
-	}
-
-	40% {
-	-webkit-transform: scaleX(0.75) scaleY(1.25);
-			transform: scaleX(0.75) scaleY(1.25);
-	}
-
-	60% {
-	-webkit-transform: scaleX(1.15) scaleY(0.85);
-			transform: scaleX(1.15) scaleY(0.85);
-	}
-}
-
 
 .scaling-box {
 	background: #f08;
@@ -407,18 +479,6 @@ body {
 	-webkit-animation-duration: 1s;
 	-webkit-animation-iteration-count: infinite;
 }
-@-webkit-keyframes googlyeyes {
-
-	0%, 100% {
-	-webkit-transform: scale(1);
-			transform: scale(1);
-	}
-
-	50% {
-	-webkit-transform: scale(1.2);
-			transform: scale(1.2);
-	}
-}
 
 .left {
 	left: 100px;
@@ -444,33 +504,7 @@ body {
 	-webkit-transform-origin: top center;
 }
 
-@-webkit-keyframes georgelol {
 
-	0%, 100% {
-	-webkit-transform: scale(1);
-			transform: scale(1);
-	}
-
-	20% {
-	-webkit-transform: scaleY(0.30);
-			transform: scaleY(0.30);
-	}
-
-	30% {
-	-webkit-transform: scaleY(0.75);
-			transform: scaleY(0.75);
-	}
-
-	60% {
-	-webkit-transform: scaleY(0.5);
-			transform: scaleY(0.5);
-	}
-
-	80% {
-	-webkit-transform: scaleY(0.30);
-			transform: scaleY(0.30);
-	}
-}
 
 .waldocrowd {
 	background: url(./img/waldocrowd.jpg);
@@ -531,12 +565,6 @@ textarea:focus {
 	-webkit-animation-iteration-count: infinite;
 }
 
-@-webkit-keyframes dash {
-	to {
-	stroke-dashoffset: 1000;
-	}
-}
-
 .hor-zebra {
 	border-collapse: collapse;
 	font-size: 12px;
@@ -579,24 +607,6 @@ textarea:focus {
     
     -webkit-animation: play .8s steps(10) infinite;
             animation: play .8s steps(10) infinite;
-}
-
-@-webkit-keyframes play {
-	from {
-		background-position: 0px; 
-	}
-	to {
-		background-position: -400px;
-	}
-}
-
-@keyframes play {
-	from {
-		background-position: 0px; 
-	}
-	to {
-		background-position: -400px;
-	}
 }
 
 .highlight span {
