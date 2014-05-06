@@ -1,0 +1,1 @@
+.image-caption{position:relative;overflow:hidden;width:450px}.image-caption:hover p{left:0}.image-caption p{position:absolute;left:-100%;bottom:0;margin:0;padding:10px 20px;background:rgba(0,0,0,.5);color:#fff;transition:left .5s ease-out}

@@ -1,0 +1,443 @@
+/*============================
+	Mondrian CSS
+===========================*/
+.canvas {
+	border: 1px solid red;
+	background: black;
+	height: 370px;
+	width: 355px;
+	position: relative;
+}
+
+/* top row of blocks */
+.blue1-row1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 71px;
+	width: 57px;
+	background: #3690f0;
+	transition: all 1s ease;
+
+	&:hover {
+		background: red;
+		height: 71px;
+		width: 355px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.blue2-row1 {
+	background: #3690f0;
+	height: 71px;
+	width: 7px;
+	position: absolute;
+	top: 0;
+	left: 64px;
+}
+
+.yellow1-row1 {
+	height: 71px;
+	width: 33px;
+	position: absolute;
+	top: 0;
+	left: 78px;
+	background-color: #f9f2b6;
+	transition: all 1s ease;
+	z-index: 100;
+
+	&:hover {
+		position: absolute;
+		top: 0;
+		left: 78px;
+		height: 370px;
+		width: 227px;
+		background-color: #fcfaed;
+	}
+
+}
+
+.yellow2-row1 {
+	background: yellow;
+	height: 71px;
+	width: 18px;
+	position: absolute;
+	left: 120px;
+}
+
+.yellow3-row1 {
+	background: yellow;
+	height: 71px;
+	width: 84px;
+	position: absolute;
+	left: 146px;
+}
+
+.yellow4-row1 {
+	background: yellow;
+	height: 71px;
+	width: 25px;
+	position: absolute;
+	left: 238px;
+}
+
+.white1-row1 {
+	background: #fff;
+	height: 71px;
+	width: 25px;
+	position: absolute;
+	left: 271px;
+}
+
+.white2-row1 {
+	background: #fff;
+	height: 71px;
+	width: 48px;
+	position: absolute;
+	right: 0;	
+}
+/* row 2 */
+.blue1-row2 {
+	background: #3690f0;
+	height: 55px;
+	width: 57px;
+	position: absolute;
+	top: 80px;
+	left: 0;
+}
+.blue2-row2 {
+	background: #3690f0;
+	height: 55px;
+	width: 7px;
+	position: absolute;
+	top: 80px;
+	left: 64px;
+}
+
+.yellow1-row2 {
+	background: yellow;
+	height: 55px;
+	width: 33px;
+	position: absolute;
+	top: 80px;
+	left: 78px;
+}
+
+.yellow2-row2 {
+	background: yellow;
+	height: 55px;
+	width: 18px;
+	position: absolute;
+	left: 120px;
+	top: 80px;
+}
+
+.yellow3-row2 {
+	background: yellow;
+	height: 55px;
+	width: 84px;
+	position: absolute;
+	left: 146px;
+	top: 80px;
+}
+
+.yellow4-row2 {
+	background: yellow;
+	height: 55px;
+	width: 25px;
+	position: absolute;
+	left: 238px;
+	top: 80px;
+}
+
+.white1-row2 {
+	background: #fff;
+	height: 55px;
+	width: 25px;
+	position: absolute;
+	left: 271px;
+	top: 80px;
+}
+
+.white2-row2 {
+	background: #fff;
+	height: 55px;
+	width: 48px;
+	position: absolute;
+	right: 0;	
+	top: 80px;
+}
+
+/* row 3 */
+.white1-row3 {
+	background: #fff;
+	height: 55px;
+	width: 57px;
+
+	position: absolute;
+	top: 145px;
+	left: 0;
+}
+.white2-row3 {
+	background: #fff;
+	height: 55px;
+	width: 7px;
+
+	position: absolute;
+	top: 145px;
+	left: 64px;
+}
+
+.white3-row3 {
+	background: #fff;
+	height: 55px;
+	width: 33px;
+
+	position: absolute;
+	top: 145px;
+	left: 78px;
+}
+
+.white4-row3 {
+	background: #fff;
+	height: 55px;
+	width: 18px;
+
+	position: absolute;
+	left: 120px;
+	top: 145px;
+}
+
+.white5-row3 {
+	background: #fff;
+	height: 55px;
+	width: 84px;
+
+	position: absolute;
+	left: 146px;
+	top: 145px;
+}
+
+.white6-row3 {
+	background: #fff;
+	height: 55px;
+	width: 25px;
+
+	position: absolute;
+	left: 238px;
+	top: 145px;
+}
+
+.white7-row3 {
+	background: #fff;
+	height: 55px;
+	width: 25px;
+
+	position: absolute;
+	left: 271px;
+	top: 145px;
+}
+
+.white8-row3 {
+	background: #fff;
+	height: 55px;
+	width: 48px;
+
+	position: absolute;
+	right: 0;	
+	top: 145px;
+}
+
+/* row 4 */
+.white1-row4 {
+	background: #fff;
+	height: 60px;
+	width: 57px;
+
+	position: absolute;
+	top: 208px;
+	left: 0;
+}
+.white2-row4 {
+	background: #fff;
+	height: 60px;
+	width: 7px;
+
+	position: absolute;
+	top: 208px;
+	left: 64px;
+}
+
+.white3-row4 {
+	background: #fff;
+	height: 60px;
+	width: 33px;
+
+	position: absolute;
+	top: 208px;
+	left: 78px;
+}
+
+.white4-row4 {
+	background: #fff;
+	height: 60px;
+	width: 18px;
+
+	position: absolute;
+	left: 120px;
+	top: 208px;
+}
+
+.white5-row4 {
+	background: #fff;
+	height: 60px;
+	width: 84px;
+
+	position: absolute;
+	left: 146px;
+	top: 208px;
+}
+
+.white6-row4 {
+	background: #fff;
+	height: 60px;
+	width: 25px;
+
+	position: absolute;
+	left: 238px;
+	top: 208px;
+}
+
+.white7-row4 {
+	background: #fff;
+	height: 60px;
+	width: 25px;
+
+	position: absolute;
+	left: 271px;
+	top: 208px;
+}
+
+.white8-row4 {
+	background: #fff;
+	height: 60px;
+	width: 40px;
+
+	position: absolute;
+	left: 307px;	
+	top: 208px;
+}
+
+/* row 5 */
+.white1-row5 {
+	background: #fff;
+	height: 90px;
+	width: 57px;
+
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.white2-row5 {
+	background: #fff;
+	height: 90px;
+	width: 7px;
+
+	position: absolute;
+	bottom: 0;
+	left: 64px;
+}
+
+.white3-row5 {
+	background: #fff;
+	height: 90px;
+	width: 33px;
+
+	position: absolute;
+	bottom: 0;
+	left: 78px;
+}
+
+.white4-row5 {
+	background: #fff;
+	height: 90px;
+	width: 18px;
+
+	position: absolute;
+	left: 120px;
+	bottom: 0;
+}
+
+.white5-row5 {
+	background: #fff;
+	height: 90px;
+	width: 84px;
+
+	position: absolute;
+	left: 146px;
+	bottom: 0;
+}
+
+.topwhite6-row5 {
+	
+	background: #fff;
+	height: 55px;
+	width: 25px;
+
+	position: absolute;
+	left: 238px;
+	top: 280;
+}
+
+.topyellow7-row5 {
+
+	background: yellow;
+	height: 55px;
+	width: 25px;
+
+	position: absolute;
+	left: 271px;
+	top: 280;
+}
+
+.bottomwhite6-row5 {
+	background: #fff;
+	height: 22px;
+	width: 25px;
+
+	position: absolute;
+	left: 238px;
+	bottom: 0;
+}
+
+.bottomwhite7-row5 {
+	background: #fff;
+	height: 22px;
+	width: 25px;
+
+	position: absolute;
+	left: 271px;
+	bottom: 0;
+}
+
+.white7-row5 {
+	background: #fff;
+	height: 90px;
+	width: 25px;
+
+	position: absolute;
+	left: 271px;
+	bottom: 0;
+}
+
+.white8-row5 {
+	background: #fff;
+	height: 90px;
+	width: 48px;
+
+	position: absolute;
+	right: 0;	
+	bottom: 0;
+}

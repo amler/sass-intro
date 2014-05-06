@@ -1,0 +1,14 @@
+.box2circle {
+	
+	background: blue;
+	height: 100px;
+	width: 100px;
+	transition: all 1s ease;
+	
+	&:hover {
+		background: red;
+		border-radius: 50%;
+		height: 200px;
+		width: 200px;
+	}
+}

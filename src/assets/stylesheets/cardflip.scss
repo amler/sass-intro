@@ -1,0 +1,50 @@
+.container {
+	-webkit-perspective: 1000;
+			perspective: 1000;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	width: 320px;
+
+	&:hover .card {
+	-webkit-transform: rotateY(180deg);
+			transform: rotateY(180deg);
+	}
+
+	.card {
+		height: 480px;
+		position: relative;
+		width: 320px;
+		-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+		-webkit-transition: 0.5s;
+				transition: 0.5s;
+	}
+
+	.face {
+		position: absolute;
+		-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+		top: 0;
+		left: 0;
+		height: 480px;
+		text-align: center;
+		width: 320px;
+	}
+
+	.front {
+		background: url(/assets/img/back-card.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		z-index: 10;
+	}
+
+	.back {
+		background: url(/assets/img/front-card.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+		-webkit-transform: rotateY(180deg);
+				transform: rotateY(180deg);
+	}
+
+}
