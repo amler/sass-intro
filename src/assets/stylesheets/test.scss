@@ -205,7 +205,6 @@ body {
 			animation-iteration-count: infinite;
 }
 
-
 .button-2 {
 	background: green;
 	color: #fff;
@@ -218,33 +217,32 @@ body {
 	overflow: hidden;
 
 	.translucent-button {
+		border: 3px solid #fff;
+		border-radius: 50px;
+		margin: 40px 50px 0 50px;
+		padding: 25px 50px;
+		text-align: center;
+		position: relative;
 
-		&:hover i {
-			right: 25px;
-			opacity: 1;
-		}
-
-		p {
-			position: relative;
-			border: 3px solid #fff;
-			border-radius: 50px;
-			margin: 40px 50px 0 50px;
-			padding: 25px 50px;
-			text-align: center;
-		}
-	
-		&:hover {
+		&:hover p {
 			background: rgba(101, 105, 111, 0.73);
 		}
 
-		i {
+		&:hover i {
+	 		right: 25px;
+	 		opacity: 1;
+		}
+
+		 i {
 			position: absolute;
 			opacity: 0;
 			right: 50px;
 			transition: all .4s ease;
 		}
 	}
+
 }
+
 
 
 
@@ -293,54 +291,54 @@ body {
 		-webkit-animation-duration: 5s;
 		-webkit-animation-iteration-count: infinite;
 	}
-
+}
 
 .relativebox {
 	position: relative;
 	height: 300px;
 	overflow: hidden;
+
+	.yellow-circle {
+		width: 200px;
+		height: 200px;
+		background: rgba(255, 235, 0, 0.7);
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 25px;
+	}
+
+	.green-circle {
+		width: 200px;
+		height: 200px;
+		background: rgba(0, 255, 0, 0.7);
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		left: 300px;
+	}
+
+	.red-circle {
+		width: 200px;
+		height: 200px;
+		background: rgba(255, 0, 0, 0.7);
+		border-radius: 50%;
+		position: absolute;
+		top: 0;
+		right: 450px;
+	}
+
+	.blue-box {
+		width:200px;
+		height:200px;
+		background:rgba(0,0,255,0.5);
+		position:absolute;
+		top: 0;
+		right: 0;
+		-webkit-animation: slidingbox 5s infinite;
+	}
 }
 
-
-.yellow-circle {
-	width: 200px;
-	height: 200px;
-	background: rgba(255, 235, 0, 0.7);
-	border-radius: 50%;
-	position: absolute;
-	top: 0;
-	left: 25px;
-}
-
-.green-circle {
-	width: 200px;
-	height: 200px;
-	background: rgba(0, 255, 0, 0.7);
-	border-radius: 50%;
-	position: absolute;
-	top: 0;
-	left: 300px;
-}
-
-.red-circle {
-	width: 200px;
-	height: 200px;
-	background: rgba(255, 0, 0, 0.7);
-	border-radius: 50%;
-	position: absolute;
-	top: 0;
-	right: 450px;
-}
-
-.blue-box {
-	width:200px;
-	height:200px;
-	background:rgba(0,0,255,0.5);
-	position:absolute;
-	top: 0;
-	right: 0;
-	-webkit-animation: slidingbox 5s infinite;
-}
 
 @-webkit-keyframes slidingbox {
 	0%, 100% {
