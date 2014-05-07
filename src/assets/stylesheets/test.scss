@@ -2,10 +2,6 @@
 @import "variables";
 @import "spinnermypink";
 
-.test {
-	@include box-sizing (border-box);
-}
-
 
 body {
 	font: 100% $font-stack;
@@ -24,7 +20,7 @@ body {
 /*========================
  Flash animation used multiple times
  =========================*/
-/*	@include keyframes(flash) {
+	@include keyframes(flash) {
 	0% {
 		opacity: 0
 	}
@@ -35,7 +31,7 @@ body {
 
 /*========================
  Spin animation
- =========================
+ =========================*/
 
 @include keyframes(spin) {
 	0% {
@@ -46,11 +42,9 @@ body {
 	}
 }
 
-
 /*==================
 	Bounce
 ====================
-
 
 @include keyframes(bounce) {
 	0%, 20%, 50%, 80%, 100% {
