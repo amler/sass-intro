@@ -2,8 +2,9 @@
 	width: 150px;
 	height: 150px;
 	background-color: green;
-	-webkit-transition: all 2s linear;
-			transition: all 2s linear;
+	
+	// @includetransition: all 2s linear;
+	// 		transition: all 2s linear;
 	
 	&:hover {
 		background-color: yellow;

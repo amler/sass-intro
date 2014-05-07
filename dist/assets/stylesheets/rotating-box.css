@@ -1,1 +1,1 @@
-.rotating-box{width:150px;height:150px;background-color:green;-webkit-transition:all 2s linear;transition:all 2s linear}.rotating-box:hover{background-color:#ff0;margin-left:400px;-webkit-transform:rotate(360deg);transform:rotate(360deg)}
+.rotating-box{width:150px;height:150px;background-color:green}.rotating-box:hover{background-color:#ff0;margin-left:400px;-webkit-transform:rotate(360deg);transform:rotate(360deg)}

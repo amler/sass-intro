@@ -15,7 +15,7 @@ body {
 }
 
 .csscontainer {
-	min-height: $csscontainer;
+	min-height: 300px;
 	background-color: #E2E2E2;
 	border-bottom: 1px dashed $mypink;
 	padding: 50px;
@@ -24,178 +24,95 @@ body {
 /*========================
  Flash animation used multiple times
  =========================*/
- @-webkit-keyframes flash {
+/*	@include keyframes(flash) {
 	0% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
-
-@keyframes flash {
-	0% {
-		opacity: 0;
+		opacity: 0
 	}
 	100% {
-		opacity: 1;
+		opacity: 1
 	}
 }
 
 /*========================
  Spin animation
- =========================*/
+ =========================
 
-@-webkit-keyframes spin {
+@include keyframes(spin) {
 	0% {
-		-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
+		@include transform(rotate(0deg));
 	}
 	100% {
-		-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
-	}
-}
-
-@keyframes spin {
- 	0% {
-		-webkit-transform: rotate(0deg);
-				transform: rotate(0deg);
-	}
- 	100% {
-		-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
-
+		@include transform(rotate(360deg));
 	}
 }
 
 
 /*==================
 	Bounce
-====================*/
+====================
 
 
-@-webkit-keyframes bounce {
+@include keyframes(bounce) {
 	0%, 20%, 50%, 80%, 100% {
-	-webkit-transform: translateY(0);
-			transform: translateY(0);
+		@include transform(translateY(0));
 	}
 
 	40% {
-	-webkit-transform: translateY(-60px);
-			transform: translateY(-60px);
+		@include transform(translateY(-60px));
 	}
 
 	60% {
-	-webkit-transform: translateY(-30px);
-			transform: translateY(-30px);
-	}
-}
-
-@keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {
-	-webkit-transform: translateY(0);
-			transform: translateY(0);
-	}
-
-	40% {
-	-webkit-transform: translateY(-60px);
-			transform: translateY(-60px);
-	}
-
-	60% {
-	-webkit-transform: translateY(-30px);
-			transform: translateY(-30px);
+		@include transform(translateY(-30px));
 	}
 }
 
 /* ========================
 	Rotate howdy animation
-	=======================*/
-
-@-webkit-keyframes rotatehowdy {
+	=======================
+@include keyframes(rotatehowdy) {
 	25% {
-	-webkit-transform: rotate(15deg);
-			transform: rotate(15deg);
+		@include transform(rotate(15deg));
 	}
-
 	50% {
-	-webkit-transform: rotate(-15deg);
-			transform: rotate(-15deg);
+		@include transform(rotate(-15deg));
 	}
-
 	75% {
-	-webkit-transform: rotate(5deg);
-			transform: rotate(5deg);
+		@include transform(rotate(5deg));
 	}
-
 	85% {
-	-webkit-transform: rotate(-5deg);
-			transform: rotate(-5deg);
+		@include transform(rotate(-5deg));
 	}
 
 	100% {
-	-webkit-transform: rotate(0deg);
-			transform: rotate(0deg);
-	}
-}
-
-@keyframes rotatehowdy {
-
-	25% {
-	-webkit-transform: rotate(15deg);
-			transform: rotate(15deg);
-	}
-
-	50% {
-	-webkit-transform: rotate(-15deg);
-			transform: rotate(-15deg);
-	}
-
-	75% {
-	-webkit-transform: rotate(5deg);
-			transform: rotate(5deg);
-	}
-
-	85% {
-	-webkit-transform: rotate(-5deg);
-			transform: rotate(-5deg);
-	}
-
-	100% {
-	-webkit-transform: rotate(0deg);
-			transform: rotate(0deg);
+		@include transform(rotate(0deg));
 	}
 }
 
 /*========================
 scaling animation
-==========================*/
-@-webkit-keyframes slidingbox {
+==========================
+
+@include keyframes(slidingbox) {
 	0%, 100% {
-	right: 100%;
+		right: 100%;
 	}
 	50% {
-	right: 0;
+		right: 0;
 	}
 }
 
-
-@-webkit-keyframes scaling {
+@include keyframes(scaling) {
 	0%, 100% {
-	-webkit-transform: scale(1);
-			transform: scale(1);
+		@include transform(scale(1));
 	}
 
 	30% {
-	-webkit-transform: scaleX (1.5) scaleY(0.75);
-			transform: scaleX(1.5) scaleY(0.75);
+		@include transform(scale(1.5, 0.75));
+//			transform: scaleX(1.5) scaleY(0.75);
 	}
 
 	40% {
-	-webkit-transform: scaleX(0.75) scaleY(1.25);
-			transform: scaleX(0.75) scaleY(1.25);
+		@include transform(scale(0.75, 1.25));
 	}
 
 	60% {
@@ -206,7 +123,7 @@ scaling animation
 
 /*============================
 	loading animation
-==============================*/
+==============================
 
 @-webkit-keyframes loadingprogress {
 	0%, 10% { 
@@ -227,7 +144,7 @@ scaling animation
 
 /*========================
 george's bulging eyes & laughing mouth
-==========================*/
+==========================
 @-webkit-keyframes googlyeyes {
 
 	0%, 100% {
@@ -270,7 +187,7 @@ george's bulging eyes & laughing mouth
 }
 /*=====================
 animation on svg
-======================*/
+======================
 
 @-webkit-keyframes dash {
 	to {
@@ -279,7 +196,7 @@ animation on svg
 }
 /*===============
 megaman animation
-=================*/
+=================
 @-webkit-keyframes play {
 	from {
 		background-position: 0px; 
