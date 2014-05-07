@@ -1,3 +1,5 @@
+@import "bourbon";
+
 .text-container {
 	position: relative;
 	font-size: 100px;
@@ -6,6 +8,6 @@
 		position: absolute;
 		left: 200px;
 		@include transform-origin(center top);
-		@include animation (rotatehowdy 1s infinite);
+		@include animation (rotatehowdy 4s infinite);
 	}
 }

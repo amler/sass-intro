@@ -1,15 +1,14 @@
+@import "bourbon";
+
 .rotating-box {
 	width: 150px;
 	height: 150px;
 	background-color: green;
-	
-	// @includetransition: all 2s linear;
-	// 		transition: all 2s linear;
+	@include transition (all 2s linear);
 	
 	&:hover {
 		background-color: yellow;
 		margin-left: 400px;
-		-webkit-transform: rotate(360deg);
-				transform: rotate(360deg);
+		@include transform(rotate(360deg));
 	}
 }

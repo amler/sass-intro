@@ -1,3 +1,5 @@
+@import "bourbon";
+
 .camera-flash:hover {
 	opacity: 0;
 	@include animation-duration(1s);
