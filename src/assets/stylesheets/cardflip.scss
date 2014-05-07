@@ -1,33 +1,36 @@
 @import "bourbon";
+$w: 320px;
+
+@mixin cardsize() {
+	height: 480px;
+	width: $w;
+}
 
 .container {
-	@include perspective(1000);
+	position: relative;
+	width: $w;
 	margin: 0;
 	padding: 0;
-	position: relative;
-	width: 320px;
+	@include perspective(1000);
 
 	&:hover .card {
 		@include transform(rotateY(180deg));
 	}
 
 	.card {
-		height: 480px;
 		position: relative;
-		width: 320px;
+		@include cardsize();
 		@include transform-style(preserve-3d);
 		@include transition(0.5s);
 	}
 
 	.face {
 		position: absolute;
-		-webkit-backface-visibility: hidden;
-				backface-visibility: hidden;
 		top: 0;
 		left: 0;
-		height: 480px;
+		@include cardsize();
 		text-align: center;
-		width: 320px;
+		@include backface-visibility(hidden);
 	}
 
 	.front {
@@ -41,8 +44,6 @@
 		background: url(/assets/img/front-card.png);
 		background-repeat: no-repeat;
 		background-size: cover;
-		-webkit-transform: rotateY(180deg);
-				transform: rotateY(180deg);
+		@include transform(rotateY(180deg));
 	}
-
 }

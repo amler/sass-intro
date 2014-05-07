@@ -66,21 +66,22 @@ body {
 	}
 }
 
+
 /* ========================
 	Rotate howdy animation
-	=======================
+	======================= */
 @include keyframes(rotatehowdy) {
 	25% {
+		@include transform(rotate(30deg));
+	}
+	40% {
+		@include transform(rotate(-30deg));
+	}
+	60% {
 		@include transform(rotate(15deg));
 	}
-	50% {
+	80% {
 		@include transform(rotate(-15deg));
-	}
-	75% {
-		@include transform(rotate(5deg));
-	}
-	85% {
-		@include transform(rotate(-5deg));
 	}
 
 	100% {
@@ -105,6 +106,8 @@ scaling animation
 	0%, 100% {
 		@include transform(scale(1));
 	}
+  @include transform(rotateX(1.5) rotateY(246.37185190625397deg) rotateZ(179.9087476710785deg) scaleX(2) translateX(11px) );
+
 
 	30% {
 		@include transform(scale(1.5, 0.75));
